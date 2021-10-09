@@ -34,3 +34,5 @@ recipe app api source code
     COMMITING TO TRAVIS-CI
       $git push origin
 //////////////TERMINAL COMMANDS//////////////
+/////////////MISCELLENEOUS///////////////////
+ - docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py test && flake8"
